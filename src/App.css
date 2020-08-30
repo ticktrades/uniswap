@@ -1,3 +1,28 @@
+@import url('https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Bebas+Neue&family=Merriweather:ital,wght@0,300;0,400;1,300&family=Playfair+Display:wght@800&display=swap');
+
+h1, h2, h3, h5, h6{
+	font-family: 'Playfair Display', serif;
+}
+h2{
+	font-family: 'Bebas Neue', cursive;
+	font-weight: 400;
+}
+body{
+	font-family: 'Merriweather', serif;
+	font-size: 20px;
+}
+
+[data-prefers-color-scheme='dark']{
+	color: white;
+	background: black;
+}
+
+[data-prefers-color-scheme='light']{
+	color: black;
+	background: white;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +60,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+.number, pre, code{
+  font-family: 'Fira Code', monospace;
+}
+.coin-price{
+  display: inline-block;
+  margin-right: 10px;
+}
+.coin-price a{
+  font-weight: 700;
+}
+.red{
+  color: red;
+}
+.green{
+  color: green;
 }
